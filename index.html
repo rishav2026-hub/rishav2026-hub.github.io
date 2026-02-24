@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
-        .container { background: rgba(255, 255, 255, 0.1); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
-        h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-        p { font-size: 1.2rem; opacity: 0.9; }
-        .btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: white; color: #764ba2; text-decoration: none; border-radius: 50px; font-weight: bold; transition: transform 0.2s; }
-        .btn:hover { transform: scale(1.05); }
-    </style>
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>This website was built with Gemini and hosted on GitHub.</p>
-        <a href="#" class="btn">Learn More</a>
-    </div>
+<body class="bg-gray-900 text-white font-sans">
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">MY NAME</div>
+        <div class="space-x-6">
+            <a href="#about" class="hover:text-blue-400">About</a>
+            <a href="#work" class="hover:text-blue-400">Work</a>
+        </div>
+    </nav>
+
+    <header class="py-20 text-center">
+        <h1 class="text-6xl font-extrabold mb-4">Cinephile69</h1>
+        <p class="text-gray-400 text-xl">I have built this using fckin a.i</p>
+    </header>
+
+    <section id="work" class="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition">
+            <h3 class="text-2xl font-bold mb-2">Interstellar2</h3>
+            <p class="text-gray-400">Yeah i made interstellar 2</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition">
+            <h3 class="text-2xl font-bold mb-2">Project Two</h3>
+            <p class="text-gray-400">Project 2? nigga i can do shit, ts ai</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 text-gray-500 text-sm">
+        &copy; 2026 Built with Gemini
+    </footer>
 </body>
 </html>
